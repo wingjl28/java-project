@@ -20,7 +20,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-        archiveArtifacts artifacts: '*.txt'
+        archiveArtifacts
          
     }
 }

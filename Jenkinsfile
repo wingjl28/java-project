@@ -20,7 +20,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-        archiveArtifacts
+        sh 'echo "artifact file" > generatedFile.txt'
          
     }
 }

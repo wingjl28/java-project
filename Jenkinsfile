@@ -17,6 +17,7 @@ node('linux'){
     
     stage('Report'){
         junit 'reports/*.xml'
+        sh 'aws cloudformation describe-stack-resources --stack-name jenkins --region us-east-1' 
     }
 }
 

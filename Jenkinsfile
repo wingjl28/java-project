@@ -8,8 +8,8 @@ node('linux'){
     }
     
     stage('Unit Tests'){
-        junit 'reports/result.xml'
         sh "ant -f test.xml -v"
+         junit 'reports/result.xml'
     }
     
 
